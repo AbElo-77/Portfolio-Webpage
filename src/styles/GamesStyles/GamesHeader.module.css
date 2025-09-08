@@ -1,0 +1,37 @@
+.gamesHeader {
+    background-color: #A1C4FD;
+    height: 100vh; 
+    margin: 0; 
+    padding-top: 5vh; 
+    font-family: 'Michroma'; 
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.gamesHeader > p {
+    font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+    .gamesHeader {
+        font-size: 2.5rem;
+        padding: 2rem;
+        height: auto;
+    }
+
+    .gamesHeader > p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .gamesHeader {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    .gamesHeader > p {
+        font-size: 1rem;
+    }
+}

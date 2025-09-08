@@ -1,0 +1,75 @@
+.headerPage {
+    position: relative;
+}
+
+.projectsNav {
+    background-color: transparent;
+    font-family: 'Michroma';
+    font-size: 1.25rem;
+    color: white;
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+    transition: color 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.projectsNav > a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.projectsNav > a:hover {
+    color: rgba(245, 255, 111, 0.5);
+}
+
+.headerSection {
+    padding-top: 5vh;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: setIn 0.6s ease-in;
+    z-index: 2;
+}
+
+@keyframes setIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.headerSection > h1 {
+    font-family: 'Michroma';
+    font-size: 6rem;
+    color: white;
+    padding: 2rem;
+    margin: 0;
+    z-index: 2;
+}
+
+.headerSection > span {
+    max-width: 70%;
+    font-family: 'Poppins';
+    font-size: 1.25rem; 
+    color: white;
+    text-align: center;
+    z-index: 2;
+}
+
+@media (max-width: 600px) {
+    .headerSection > h1 {
+        font-size: 4rem;
+    }
+    .headerSection > span {
+        font-size: 1rem;
+        max-width: 90%;
+    }
+}

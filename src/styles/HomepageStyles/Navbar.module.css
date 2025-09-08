@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Michroma&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --primary-color: #c7d7e9;
+    --secondary-color: #f5f5f5;
+    --text-color: #333;
+    --main-font-family: 'Michroma', sans-serif;
+    --special-font-family: 'Inter', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: 'transparent';
+    height: 8vh;
+    transition: height 0.7s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.isScrolledB {
+    height: 5vh;
+    background-color: rgb(63, 63, 63);
+    transition: height 0.7s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.navContent {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    width: 70%;
+    transition: width 1s ease-in-out;
+}
+
+.isScrolledN {
+    width: 70%;
+    transition: width 1s ease-in-out;
+}
+
+.navContent > p {
+    color: rgb(255, 255, 255);
+    font-family: 'Michroma';
+    font-size: 1.5rem;
+    transition: font-size 0.7s ease-in-out;
+}
+
+.isScrolledN > p {
+    font-size: 1.25rem;
+    transition: font-size 0.7s ease-in-out;
+}
+
+.navLinks {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    font-family: var(--main-font-family);
+    justify-content: right;
+    align-items: center;
+}
+
+.navLinks > li > a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.6s ease;  
+    color: white;
+}
+
+.navLinks > li > a:hover {
+    color: rgb(137, 146, 14);
+}
+
+@media (max-width: 800px) {
+    .navContent > p {
+        font-size: 1rem;
+    }
+    .isScrolledB {
+        height: 7vh;
+    }
+    .isScrolledN {
+        width: 90%;
+    }
+    .isScrolledB > p {
+        display: none;
+    }
+    .isScrolledN > p {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        height: 10vh;
+    }
+    .navContent {
+        width: 100%;
+        justify-content: right;
+
+    }
+    .navContent > p {
+        display: none;
+    }
+    .navContent.isScrolledN .navLinks {
+        padding: 0;
+    }
+    .navLinks > li > a {
+        font-size: 0.7rem;
+    }
+    .isScrolledB {
+        height: 7vh;
+        align-items: center;
+        justify-content: center;
+    }
+    .isScrolledN {
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+    }
+    .isScrolledB > p {
+        display: none;
+    }
+    .isScrolledN > p {
+        display: none;
+    }
+}

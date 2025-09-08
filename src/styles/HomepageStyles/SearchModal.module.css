@@ -1,0 +1,279 @@
+.searchModal {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    max-width: none !important;
+    max-height: none !important;
+    background: transparent;
+    padding: 0;
+    margin: auto;
+    animation: popIn 0.6s ease-in-out;
+    overflow: hidden;
+}
+
+.searchModal[isClosed] {
+    animation: popIn 0.6s ease-in-out reverse;
+}
+
+@keyframes popIn {
+    0% {
+        width: 0; 
+        height: 0;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.navElement {
+    height: 4vh;
+    background-color: rgb(78, 78, 78);
+    border-bottom: 1px solid black;
+    margin: 0;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+}
+
+.minimizeButton {
+    width: 6vw;
+    height: 4vh;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: rgba(66, 66, 66, 0.788);
+}
+
+.minimizeButton > img{
+    max-width: 100%;
+    max-height: 60%;
+}
+
+.minimizeButton:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.exitButton {
+    width: 6vw;
+    height: 4vh;
+    background-color: rgba(182, 0, 0, 0.2);
+    border: rgba(66, 66, 66, 0.788);
+}
+
+.exitButton > img {
+    max-width: 100%;
+    max-height: 60%;
+}
+
+.exitButton:hover {
+    background-color: rgba(182, 0, 0, 0.4);
+}
+
+.searchBody {
+    background-color: #2A6CB2;
+    height: 97vh;
+}
+
+.queryResult {
+    height: 80vh;
+    display: flex;
+    flex-direction: column; 
+    padding: 1rem 10vw;
+    overflow-y: scroll;
+}
+
+.queryItem {
+    width: fit-content;
+    max-width: 75%;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    color: white;
+    font-family: 'Michroma', sans-serif;
+    font-size: 1.5rem;
+    border-radius: 18px;
+    margin-left: auto;
+    margin-bottom: 1rem;
+    animation: setIn 0.6s ease-in-out forwards;
+    display: flex;
+}
+
+.responseHeader {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.resultLink {
+    display: block;
+    width: fit-content;
+    max-width: 75%;
+    padding: 0.5rem 1rem;
+    color: rgb(255, 255, 255);
+    font-family: 'Michroma', sans-serif;
+    justify-content: center;
+    align-content: center;
+    text-decoration: none;
+    font-size: 2rem;
+    border-radius: 20px;
+    animation: setIn 0.6s ease-in-out forwards;
+    margin: 0;
+    margin-bottom: 1rem;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.resultLink:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transition: background-color 0.3s ease-in-out;
+}
+
+@keyframes setIn {
+    0% {
+        opacity: 0; 
+        transform: translateX(25%);
+    }
+    100% {
+        opacity: 1; 
+        transform: translateX(0%);
+    }
+}
+
+
+.searchBarContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    margin: 0;
+    height: 14vh;
+}
+
+.searchBar {
+    box-sizing: border-box;
+    display: flex;
+    border: 1px solid rgb(105, 105, 105);
+    border-radius: 10px;
+    padding: 0.75rem;
+    width: 80%;
+    background: rgba(31, 31, 31, 0.8);
+    box-shadow: 0px 2px 5px black;
+    backdrop-filter: blur(4px);
+}
+
+.microphoneButton {
+    width: 3%;
+    background-color: #acacac99;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: scale 0.1s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.microphoneButton > img {
+    max-width: 75%;
+}
+
+.microphoneButton:hover {
+    scale: 0.9;
+    background-color: #f8f8f899;
+    transition: scale 0.1s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.searchInput {
+    flex: 1;
+    background-color: transparent;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    font-family: 'Michroma', sans-serif;
+    color: white;
+    height: 2vh;
+}
+
+.searchInput::placeholder {
+    opacity: 0.7;
+    font-family: 'Michroma', sans-serif;
+    font-size: 1.1rem;
+    color: white;
+}
+
+.submitButton {
+    width: 3%;
+    background-color: rgba(68, 189, 84, 0.6);
+    box-shadow: 0px 2px 5px black;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: scale 0.1s ease-in-out;
+}
+
+.submitButton > img {
+    max-width: 75%;
+    
+}
+
+.submitButton:hover {
+    scale: 0.9;
+    transition: scale 0.1s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .queryItem, .resultLink {
+        max-width: 90%;
+        font-size: 1.2rem;
+    }
+
+    .searchBar {
+        width: 95%;
+        height: 5vh;
+    }
+
+    .searchInput::placeholder {
+        font-size: 0rem;
+    }
+
+    .microphoneButton {
+        display: none;
+    }
+
+    .submitButton {
+        width: 6%;
+        height: 2vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .queryItem, .resultLink {
+        max-width: 100%;
+        font-size: 1rem;
+    }
+
+    .searchBar {
+        width: 95%;
+        height: 5vh;
+    }
+
+    .searchInput {
+        padding: 0;
+        margin: 0;
+    }
+
+    .searchInput::placeholder {
+        font-size: 0rem;
+    }
+
+    .microphoneButton {
+        display: none;
+    }
+
+    .submitButton {
+        width: 6%;
+        height: 2.25vh;
+    }
+}

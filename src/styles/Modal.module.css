@@ -1,0 +1,200 @@
+
+.projectModal {
+    width: 50%;
+    height: 80%;
+    padding: 0;
+    border: 0;
+    margin-top: 5rem;
+    background-color: rgb(99, 99, 99);
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px black;
+    animation: popIn 0.4s ease-in-out;
+    outline: none;
+    overflow: hidden;
+}
+
+@keyframes popIn {
+    0% {scale: 0; opacity: 0;}
+    100% {scale: 1; opacity: 1;}
+}
+
+.projectModal > div {
+    width: 100%;
+    height: 100%;
+    display: flex; 
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    background-color: rgba(100, 100, 100, 0.8);
+    color: white;
+}
+
+.modalImage {
+    min-height: 60%;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+.projectModal > div > h1 {
+    display: flex;
+    font-family: 'Michroma', sans-serif;
+    font-size: 2rem;
+    margin: 0;
+    padding: 1rem;
+    width: 100%;
+}
+
+.projectWriteUp > span {
+    font-family: 'Michroma';
+    font-size: 1.5rem; 
+    color: rgba(235, 235, 54, 0.8);
+    margin-top: 0.5rem;
+    position: relative;
+    cursor: pointer;
+    
+}
+
+.projectWriteUp > span:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 5%;
+    width: 10%;
+    left: 0;
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: opacity 0.3s ease-in-out;
+}
+
+.projectWriteUp > span:hover:after {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    animation: slideIn 0.3s ease-in-out;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(20%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+
+.projectWriteUp {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins';
+    font-size: 1rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    height: 100%;
+}
+
+
+.techStackFooter {
+    background-color: rgba(75, 75, 75, 0.3);
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 0.5rem 0rem 0.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    font-family: 'Poppins', sans-serif;
+}
+
+.techStackFooter > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.techStackFooter > div > a {
+    max-width: 20px;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex; 
+    justify-content: center;
+    transition: scale 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.techStackFooter > div > a > img {
+    max-width: 100%;
+    margin: auto;
+}
+
+.techStackFooter > div > a:hover {
+    scale: 0.9;
+    background-color: rgba(0, 0, 0, 0.05);
+    transition: scale 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .projectModal {
+        width: 95%;
+        height: 75%;
+        margin-top: 2rem;
+    }
+
+    .modalImage {
+        min-height: 50%;
+    }
+
+    .projectModal > div > h1 {
+        font-size: 2rem;
+        padding: 0.5rem;
+    }
+
+    .projectWriteUp {
+        font-size: 0.9rem;
+        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    }
+
+
+    .techStackFooter {
+        font-size: 0.8rem;
+        padding: 0.3rem 0rem 0.3rem 0.5rem;
+    }
+
+    .techStackFooter > div > a {
+        max-width: 15px;
+        padding: 0.3rem;
+        margin-right: 0.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .projectModal {
+        width: 95%;
+        height: 60%;
+        margin-top: 0;
+        border-radius: 0;
+    }
+
+    .modalImage {
+        min-height: 60%;
+    }
+
+    .projectModal > div > h1 {
+        font-size: 2rem;
+        padding: 0.3rem;
+    }
+
+    .projectWriteUp {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.3rem 0.3rem 0.3rem;
+    }
+
+
+    .techStackFooter {
+        font-size: 0.7rem;
+        padding: 0.2rem 0rem 0.2rem 0.3rem;
+    }
+
+    .techStackFooter > div > a {
+        max-width: 12px;
+        padding: 0.2rem;
+        margin-right: 0.2rem;
+    }
+}

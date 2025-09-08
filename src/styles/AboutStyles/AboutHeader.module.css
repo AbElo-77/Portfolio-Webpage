@@ -1,0 +1,55 @@
+.aboutHeader {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    color: white;
+    padding-top: 5vh;
+}
+
+.aboutNav {
+    background-color: transparent;
+    font-family: 'Michroma';
+    align-self: flex-start;
+    font-size: 1.25rem;
+    color: white;
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+    transition: color 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.aboutNav > a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.aboutNav > a:hover {
+    color: rgba(245, 255, 111, 0.5);
+}
+
+.aboutHeader > h1 {
+    font-size: 6rem; 
+    font-family: 'Michroma'; 
+    padding: 2rem;
+    margin: 0; 
+}
+
+.aboutHeader > p {
+    width: 70%;
+    font-family: 'Poppins'; 
+    font-size: 1.25rem; 
+    text-align: center;
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    .aboutHeader > h1 {
+        font-size: 4rem;
+    }
+    .aboutHeader > p {
+        font-size: 1rem;
+        width: 90%;
+    }
+}

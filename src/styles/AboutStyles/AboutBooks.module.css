@@ -1,0 +1,125 @@
+.aboutBooks {
+    overflow: hidden;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+}
+
+.aboutBooks > h1 {
+    font-family: 'Michroma';
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.carouselContainer {
+    background-color: rgb(134, 172, 255, 0.2);
+    padding: 2rem;
+}
+
+.bookCarousel {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.bookItem {
+    min-width: 200px;
+    box-shadow: 0px 2px 2px black;
+    transition: scale 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.bookItem > img {
+    border: 4px solid white;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+}
+
+.bookItem:hover {
+    scale: 1.05;
+    transition: scale 0.3s ease-in-out;
+}
+
+.bookDisplay {
+    display: flex; 
+    gap: 10vw;
+    padding: 5rem;
+    animation: setIn 0.6s ease-in-out;
+    font-family: 'Poppins';
+    font-size: 1rem; 
+    color: white; 
+}
+
+.bookDisplay > div {
+    display: flex;
+    flex-direction: column;
+}
+.bookImage {
+    max-width: 400px;
+}
+
+.amazonButton {
+    padding: 5px; 
+    background-color: rgb(71, 71, 71); 
+    border-radius: 5px;
+    max-width: 40%;
+}
+
+.bookDisplay > div > h1 {
+    font-family: 'Michroma'; 
+    font-size: 1.5rem;
+    color: white;
+}
+
+.bookDetails {
+    display: flex; 
+    width: 100%;
+    gap: 1rem;
+}
+
+.bookDetails > a {
+    width: 5%;
+}
+
+.bookDetails > span {
+    color: rgb(125, 160, 255);
+}
+
+
+@keyframes setIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+}
+}
+
+@media (max-width: 800px) {
+    .aboutBooks > h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .carouselContainer {
+        padding: 1rem;
+    }
+    .bookCarousel > img {
+        width: 150px;
+        height: 200px;
+    }
+    .bookDisplay {
+        flex-direction: column;
+        align-items: center;
+    }
+    .bookImage {
+        max-width: 90%;
+    }
+    .bookDisplay > div > h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}

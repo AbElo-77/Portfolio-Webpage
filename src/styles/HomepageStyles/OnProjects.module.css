@@ -1,0 +1,248 @@
+.projectSection {
+    display: flex;
+    justify-content: center;
+    background-color: #A1C4FD;
+    z-index: -1;
+}
+
+.headingSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+}
+
+.headingSection > div {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 2rem;
+    width: 100%;
+}
+
+.headingSection > div > h1 {
+    font-family: 'Michroma', sans-serif;
+    font-size: 6rem;
+    letter-spacing: 0.02rem;
+    color: white;
+    z-index: 2;
+}
+
+.headingSection > div > p {
+    color: white;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.headingSection > div > a {
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(241, 243, 99);
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+}
+
+.headingSection > div > video {
+    min-width: 450px;
+    scale: 1.35;
+    width: 100%;
+    transform: rotate(95deg);
+    border: 5px solid white;
+    border-radius: 10px;
+
+}
+
+.projectGrid {
+    display: grid;
+    justify-content: center;
+    background: #A1C4FD;
+    grid-template-columns: repeat(3, 30%);
+    grid-auto-columns: none;
+    padding-top: 2rem;
+    padding-bottom: 10rem;
+    gap: 2rem;
+}
+
+.projectItem {
+    box-sizing: border-box;
+    transition: scale, 0.3s ease-in, box-shadow 0.1s ease-in-out;
+}
+
+
+.projectItem:hover {
+    scale: 1.02;
+    transition: scale, 0.3s ease-in, box-shadow 0.1s ease-in-out;
+}
+
+
+.projectImage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+
+}
+
+.projectDes {
+    display: flex;
+    position: relative;
+    justify-content: right;
+    width: 100%;
+    background-color: rgb(31, 31, 31);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.itemTitle {
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 2rem; 
+    font-family: 'Michroma';
+    text-align: right;
+}
+
+.itemTitle::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 2rem;
+    height: 1rem;
+    width: calc(2rem + 50%);
+    background-color: rgba(255, 214, 101, 0.582);
+}
+
+.backdropFilter {
+    position: fixed; 
+    inset: 0;
+    background: radial-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5));
+    animation: setIn 0.6s ease-in-out;
+}
+
+@keyframes setIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1200px) {
+    .projectGrid {
+        grid-template-columns: repeat(2, 45%);
+        padding-top: 1rem;
+    }
+
+    .headingSection {
+        width: 90%;
+        margin-bottom: 5rem;
+    }
+
+    .headingSection > div {
+        padding: 0.5rem;
+    }
+
+    .headingSection > div > h1 {
+        font-size: 4rem;
+    }
+
+    .headingSection > div > p {
+        font-size: 1.5rem;
+    }
+
+    .headingSection > div > a {
+        font-size: 1.5rem;
+    }
+
+    .projectImage {
+        height: 20vh;
+    }
+
+    .itemTitle {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .projectGrid {
+        grid-template-columns: repeat(1, 90%);
+        padding-top: 1rem;
+        padding-bottom: 5rem;
+    }
+
+    .headingSection {
+        width: 90%;
+    }
+
+    .headingSection > div {
+        padding: 0.5rem;
+    }
+
+    .headingSection > div > h1 {
+        font-size: 2rem;
+    }
+
+    .headingSection > div > p {
+        font-size: 1rem;
+    }
+
+    .headingSection > div > a {
+        font-size: 1rem;
+    }
+
+    .headingSection > div > video {
+        min-width: 300px;
+        scale: 1.25;
+    }
+
+    .projectImage {
+        height: 25vh;
+    }
+
+    .itemTitle {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .projectSection {
+        padding: 0;
+        margin: 0;
+    }
+
+    .headingSection {
+        width: 100%;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .headingSection > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem;
+    };
+
+    .headingSection > div > video {
+        min-width: 250px;
+        width: 60%;
+        scale: 1.25;
+    }
+
+    .headingSection > div > h1 {
+        font-size: 2rem;
+    }
+
+    .headingSection > div > p {
+        font-size: 1rem;
+    }
+}  

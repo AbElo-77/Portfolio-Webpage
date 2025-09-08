@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Michroma&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    z-index: 0;
+    overflow-x: hidden;
+    background: transparent;
+}
+
+
+.moving-dot {
+    position: relative;
+    top: 10%;
+    animation: upAndDown 1s ease-in-out  alternate infinite;
+}
+
+@keyframes upAndDown {
+    0% {top: 10%}
+    25% {top: 25%}
+    50% {top: 50%}
+    75% {top: 65%}
+    100% {top: 70%}
+}

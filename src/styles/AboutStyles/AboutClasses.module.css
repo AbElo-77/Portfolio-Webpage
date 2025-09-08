@@ -1,0 +1,90 @@
+.aboutCourses {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 0rem;
+}
+
+.aboutCourses > h1 {
+    color: white; 
+    font-family: 'Michroma';
+    font-size: 3.5rem;
+    margin: 0;
+    padding: 0rem 2rem;
+}
+
+.aboutCourses > p {
+    color: white; 
+    font-family: 'Poppins'; 
+    font-size: 1.5rem;
+    padding: 0rem 2rem;
+}
+
+.carouselContainer {
+  overflow: hidden;
+  width: 100%;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+}
+
+.courseCarousel {
+  display: flex;
+  gap: 1rem;
+  color: rgb(138, 189, 255);
+  font-family: 'Poppins'; 
+  font-size: 1.25rem;
+}
+
+.courseItem {
+  box-sizing: border-box; 
+  padding: 1rem;
+  white-space: nowrap;
+  border: 2px solid white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.courseItem:hover {
+  transform: translateY(-10px);
+  transition: transform 0.3s ease-in-out; 
+}
+
+.currentClass {
+    font-family: 'Poppins'; 
+    font-size: 1.25rem;
+    color: white;
+    text-align: center;
+    margin: 2rem;
+    animation: setIn 0.5s ease-in-out;
+}
+
+.currentClass > h2 {
+    font-family: 'Michroma';
+    font-size: 2rem;  
+}
+
+@keyframes setIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 600px) {
+    .aboutCourses > h1 {
+        font-size: 2.5rem;
+        align-self: center;
+    }
+    .aboutCourses > p {
+        font-size: 1.25rem;
+    }
+    .courseItem {
+        font-size: 1rem;
+    }
+}
