@@ -2,9 +2,7 @@ import { useState, useCallback, useRef, useEffect } from 'react';
 import {Link} from 'react-router'
 import styles from '../../styles/HomepageStyles/Skills.module.css';
 import {skillsInformation} from '../../constant-data/skillsInformation';
-import type { Project } from '../../types/projectType';
 import {projects} from '../../constant-data/projects'
-import Modal from '../Modal';
 import Canvas from '../Canvas'
 import sunImage from '../../assets/sunny.png'
 import LArrowImage from '../../assets/LArrow.png';

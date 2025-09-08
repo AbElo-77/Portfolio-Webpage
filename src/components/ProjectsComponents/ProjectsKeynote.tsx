@@ -6,7 +6,7 @@ import styles from '../../styles/ProjectsStyles/ProjectsKeynote.module.css';
 function ProjectsKeynote() {
     let [firstVideo, setfirstVideo] = useState<string>('');
 
-
+    setfirstVideo("");
 
 
     const keynoteProjects =  projects.filter((item) => {

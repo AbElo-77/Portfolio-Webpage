@@ -1,4 +1,3 @@
-import {useEffect, useRef, useState} from 'react'
 import styles from '../styles/Modal.module.css'
 import type { Project } from '../types/projectType'
 import GitHubImage from '../assets/GithubLogo.png'
@@ -11,35 +10,6 @@ type ModalProps = {
 function Modal({ currentProject, dialogRef }: ModalProps) {
     if (!currentProject || !dialogRef) return;
     
-
-    const [dimensions, setDimensions] = useState({ width: 0, height: 0, offsetTop: 0, left: 0 });
-
-
-      useEffect(() => {
-    const element = dialogRef.current;
-    if (!element) return;
-
-    const update = () => {
-      const rect = element.getBoundingClientRect();
-      setDimensions({
-        width: rect.width,
-        height: element.offsetHeight,
-        offsetTop: rect.top + window.scrollY, 
-        left: rect.left
-      });
-    };
-
-    update();
-
-    window.addEventListener('resize', update);
-    window.addEventListener('scroll', update);
-
-    return () => {
-      window.removeEventListener('resize', update);
-      window.removeEventListener('scroll', update);
-    };
-  }, []);
-
 
     return (
     <>

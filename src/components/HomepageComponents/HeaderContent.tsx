@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router';
 import SearchBar from './Searchbar'
 import styles from '../../styles/HomepageStyles/HeaderContent.module.css';
 import backgroundImage from '../../assets/WyoImage.jpg'

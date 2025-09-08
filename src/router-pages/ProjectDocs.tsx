@@ -23,11 +23,7 @@ function ProjectDocs() {
     useEffect(() => {
         window.scrollTo({ top: 0, left: 0, behavior: "instant" }); 
     }, []);
-
-    function prev(previousValue: (cur: string) => void, currentValue: string, currentIndex: number, array: string[]): (cur: string) => void {
-        throw new Error('Function not implemented.');
-    }
-
+    
     return (
         <div className={styles.projectPage}>
             <Canvas 
