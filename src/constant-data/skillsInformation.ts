@@ -36,7 +36,7 @@ import AnsibleLogo from '../assets/ansible_logo.png'
 
 import SQLLogo from '../assets/SQL_logo.png'
 import PHPLogo from '../assets/php_logo.png'
-import RLogo from '../assets/r_logo.png'
+import RLogo from '../assets/R_logo.png'
 import TensorFlowLogo from '../assets/tensorflow_logo.png'
 import PyTorchLogo from '../assets/pytorch_logo.png'
 import KerasLogo from '../assets/keras_logo.png'
