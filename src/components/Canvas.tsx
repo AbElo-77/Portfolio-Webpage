@@ -1,7 +1,6 @@
 import { useEffect, useRef } from 'react';
 import cloudImage from '../assets/cloud.png';
 import birdImage from '../assets/birdImage.png'
-import birdVideo from '../assets/birdVideo.mp4'
 
 type CanvasProps = {
   width: number;
@@ -119,7 +118,7 @@ export default function ParticleTextCanvas({ width, height, offset, cloudNum}: C
   <>
     <video
     ref={videoRef}
-    src={birdVideo}
+    src={""}
     style={{display: 'none'}}
     playsInline
     >
