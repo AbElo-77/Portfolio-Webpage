@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react'
-import { NavLink } from 'react-router'
+import { NavLink } from 'react-router-dom'
 import styles from '../../styles/HomepageStyles/Navbar.module.css'
 
 function Navbar() {

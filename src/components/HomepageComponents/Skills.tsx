@@ -1,5 +1,5 @@
 import { useState, useCallback, useRef, useEffect } from 'react';
-import {Link} from 'react-router'
+import {Link} from 'react-router-dom'
 import styles from '../../styles/HomepageStyles/Skills.module.css';
 import {skillsInformation} from '../../constant-data/skillsInformation';
 import {projects} from '../../constant-data/projects'

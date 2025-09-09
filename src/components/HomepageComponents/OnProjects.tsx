@@ -1,5 +1,5 @@
 import {useRef, useState, useEffect} from 'react'
-import { Link } from 'react-router'
+import { Link } from 'react-router-dom'
 import type { Project } from '../../types/projectType'
 import {projects} from '../../constant-data/projects'
 import Modal from '../Modal'

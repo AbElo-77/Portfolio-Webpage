@@ -1,4 +1,4 @@
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 import { useEffect, useRef, useState } from 'react';
 import { commonWords } from '../../constant-data/commonWords';
 import Search, { type SearchResult } from '../../utility/searchAlgorithm';

@@ -1,4 +1,4 @@
-import { Link } from 'react-router'
+import { Link } from 'react-router-dom'
 import styles from '../../styles/AboutStyles/AboutHeader.module.css'
 
 function AboutHeader() {
