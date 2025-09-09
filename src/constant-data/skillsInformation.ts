@@ -19,7 +19,7 @@ import BabelLogo from '../assets/babel_logo.png'
 import JestLogo from '../assets/jest_logo.png'
 import ESLintLogo from '../assets/ESLint.png'
 
-import PythonLogo from '../assets/python_logo.png'
+import PythonLogo from '../assets/Python_logo.png'
 import JavaLogo from '../assets/java_logo.png'
 import CPlusPlusLogo from '../assets/cpp.png'
 import RubyLogo from '../assets/ruby_logo.png'
