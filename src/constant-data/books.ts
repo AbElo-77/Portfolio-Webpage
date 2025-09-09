@@ -1,14 +1,14 @@
 import type {Book} from '../types/booksType.ts'
-import BarberBook from '../assets/barberBook.jpg';
-import CramerBook from '../assets/cramerBook.jpg';
-import TanenbaumBook from '../assets/tanenbaumBook.jpg';
-import PattersonBook from '../assets/pattersonBook.jpg';
-import LevenspielBook from '../assets/levenspielBook.jpg';
-import AtkinsBook from '../assets/atkinsBook.jpg';
+import BarberBook from '../assets/BarberBook.jpg';
+import CramerBook from '../assets/CramerBook.jpg';
+import TanenbaumBook from '../assets/TanenbaumBook.jpg';
+import PattersonBook from '../assets/PattersonBook.jpg';
+import LevenspielBook from '../assets/LevenspielBook.jpg';
+import AtkinsBook from '../assets/AtkinsBook.jpg';
 import BerentenBook from '../assets/GruyterBook.jpg'
 import UncutLeach from '../assets/UncutLeach.jpg'
 import GehrkeBook from '../assets/GehrkeBook.jpg'
-import DragonBook from '../assets/dragonBook.jpg';
+import DragonBook from '../assets/DragonBook.jpg';
 
 import HamletCover from '../assets/hamlet.jpg';
 import AntonyCleopatraCover from '../assets/antonyCleopatra.jpg';
