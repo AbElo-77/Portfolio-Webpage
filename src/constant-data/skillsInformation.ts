@@ -45,7 +45,7 @@ import PandasLogo from '../assets/pandas_logo.png'
 import OracleLogo from '../assets/oracle_logo.png'
 import JupyterLogo from '../assets/jupyter_notebook_logo.png'
 import TableauLogo from '../assets/tableau_logo.png'
-import PowerBILogo from '../assets/powerbi_logo.png'
+import PowerBILogo from '../assets/powerBI_logo.png'
 
 
 
