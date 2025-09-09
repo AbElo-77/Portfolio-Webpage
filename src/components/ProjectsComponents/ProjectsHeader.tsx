@@ -5,7 +5,6 @@ import styles from '../../styles/ProjectsStyles/ProjectsHeader.module.css'
 function ProjectsHeader() {
     const SectionRef = useRef<HTMLDivElement>(null)
 
-
     return (
     <div ref={SectionRef} className={styles.headerPage}>
         <nav className={styles.projectsNav}>
