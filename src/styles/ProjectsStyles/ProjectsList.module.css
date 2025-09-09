@@ -156,4 +156,10 @@ a {
     .completeSelect {
         display: none;
     }
+
+    .typeSelect {
+        font-size: 0.4rem;
+    }
+
+
 }
