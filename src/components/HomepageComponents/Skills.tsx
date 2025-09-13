@@ -86,7 +86,7 @@ function Skills() {
                   </>
                   
                 ) : <>
-                      <img src={outerItem[item as keyof typeof outerItem] as string[][0]}></img>
+                      <img src={(outerItem[item as keyof typeof outerItem] as string[])[0]}  className={styles.smallerImage}></img>
                     </> }
                 </div>
             </p>

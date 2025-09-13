@@ -128,7 +128,7 @@
         width: 7%;
     }
     .searchInput::placeholder {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     }
 }
 

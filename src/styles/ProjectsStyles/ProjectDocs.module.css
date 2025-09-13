@@ -17,6 +17,7 @@
     padding: 0.5rem;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 1rem; 
     font-family: 'Poppins'; 
     font-size: 1.25rem;
@@ -91,7 +92,11 @@
 @media (max-width: 480px) {
 
     .projectPage > nav {
-        font-size: 0.75rem;
+        font-size: 0.5rem;
+    }
+
+    .projectPage > nav > img {
+        height: 75%;
     }
 
     .projectPage > h1 {

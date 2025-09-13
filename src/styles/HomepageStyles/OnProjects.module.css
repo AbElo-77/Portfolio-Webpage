@@ -3,6 +3,7 @@
     justify-content: center;
     background-color: #A1C4FD;
     z-index: -1;
+    overflow-x: hidden;
 }
 
 .headingSection {
@@ -50,6 +51,15 @@
     border: 5px solid white;
     border-radius: 10px;
 
+}
+
+.headingSection > div > img {
+    min-width: 450px;
+    width: 100%;
+    transform: rotate(95deg);
+    border: 5px solid white;
+    border-radius: 10px;
+    display: none;
 }
 
 .projectGrid {
@@ -233,9 +243,13 @@
     };
 
     .headingSection > div > video {
+        display: none;
+    }
+
+    .headingSection > div > img {
         min-width: 250px;
         width: 60%;
-        scale: 1.25;
+        display: block;
     }
 
     .headingSection > div > h1 {

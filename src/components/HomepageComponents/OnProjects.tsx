@@ -5,6 +5,7 @@ import {projects} from '../../constant-data/projects'
 import Modal from '../Modal'
 import styles from '../../styles/HomepageStyles/OnProjects.module.css'
 import coverVideo from '../../assets/3129957-uhd_3840_2160_25fps.mp4'
+import coverImage from '../../assets/pexels-fauxels-3184460.jpg'
 
 function OnProjects() {
   const [currentProject, setCurrentProject] = useState<Project | undefined>(undefined);
@@ -58,6 +59,7 @@ function OnProjects() {
                 </div>
                 <div>
                   <video src={coverVideo} autoPlay={true} loop={true}></video>
+                  <img src={coverImage}></img>
                 </div>
             </div>
         </div>
