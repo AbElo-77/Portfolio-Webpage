@@ -53,15 +53,6 @@
 
 }
 
-.headingSection > div > img {
-    min-width: 450px;
-    width: 100%;
-    transform: rotate(95deg);
-    border: 5px solid white;
-    border-radius: 10px;
-    display: none;
-}
-
 .projectGrid {
     display: grid;
     justify-content: center;
@@ -242,14 +233,8 @@
         padding: 0.5rem;
     };
 
-    .headingSection > div > video {
+    .headingSection > div:nth-child(2) {
         display: none;
-    }
-
-    .headingSection > div > img {
-        min-width: 250px;
-        width: 60%;
-        display: block;
     }
 
     .headingSection > div > h1 {
