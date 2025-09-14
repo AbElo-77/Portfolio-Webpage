@@ -1,7 +1,7 @@
 # Portfolio Webpage
 
 This repository contains a personal portfolio webpage, including a React frontend and a PHP backend.  
-The project showcases coding projects, a blog section, and interactive forms handled via PHP.
+The project showcases coding projects, an about section, and interactive forms handled via PHP.
 
 ---
 
@@ -9,9 +9,6 @@ The project showcases coding projects, a blog section, and interactive forms han
 
 - [Overview](#overview)
 - [Tech Stack](#tech-stack)
-- [Setup](#setup)
-- [Usage](#usage)
-- [Contributing](#contributing)
 - [License](#license)
 
 ---
@@ -20,7 +17,7 @@ The project showcases coding projects, a blog section, and interactive forms han
 
 This portfolio project includes:
 
-- **Frontend:** React + TypeScript, featuring a personal portfolio, project showcase, and blog.  
+- **Frontend:** React + TypeScript, featuring a personal portfolio, project showcase, and about section. 
 - **Backend:** PHP scripts for handling forms and potential database integration.  
 - **Media:** Images, GIFs, and videos showcasing projects.
 
@@ -33,14 +30,11 @@ This README is temporary and will be updated as the project matures.
 - **Frontend:** React, TypeScript, CSS  
 - **Backend:** PHP  
 - **Deployment:** Frontend (Vercel/Netlify), Backend (Render with Docker)  
-- **Version Control:** Git + GitHub  
-- **Optional:** PostgreSQL/MySQL for backend database integration  
+- **Version Control:** Git + GitHub    
 
 ---
 
-## Setup
+## License
 
-### Frontend (React)
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
+This project is licensed under the MIT License. 
+
