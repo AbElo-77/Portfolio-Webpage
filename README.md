@@ -29,7 +29,7 @@ This README is temporary and will be updated as the project matures.
 
 - **Frontend:** React, TypeScript, CSS  
 - **Backend:** PHP  
-- **Deployment:** Frontend (Vercel/Netlify), Backend (Render with Docker)  
+- **Deployment:** Frontend (Vercel), Backend (Render with Docker)  
 - **Version Control:** Git + GitHub    
 
 ---
@@ -37,4 +37,5 @@ This README is temporary and will be updated as the project matures.
 ## License
 
 This project is licensed under the MIT License. 
+
 
