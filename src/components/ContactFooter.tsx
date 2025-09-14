@@ -20,7 +20,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
   console.log({ name, email, message });
   try {
     const response = await axios.post(
-      'https://php-backend-new.onrender.com',
+      'https://php-backend-new.onrender.com/submit.php',
       { name, email, message },
       { headers: { 'Content-Type': 'application/json' } }
     );
