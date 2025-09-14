@@ -311,7 +311,7 @@
 
 .smallerImage {
     width: 25px;
-    max-width: 25px !important;
+    max-width: 50px !important;
     height: 20px;
     max-height: 20px !important;
 }
@@ -355,14 +355,14 @@
 
 
     .techStack > p.third {
-        width: 5%;
-        height: 8%;
+        width: 10%;
+        height: 15%;
         top: 70%;
     }
 
     .techStack > p.fourth {
-        width: 5%;
-        height: 8%;
+        width: 10%;
+        height: 15%;
         top: 90%;
     }
 
@@ -445,14 +445,14 @@
 
 
     .techStack > p.third {
-        width: 5%;
-        height: 8%;
+        width: 10%;
+        height: 15%;
         top: 70%;
     }
 
     .techStack > p.fourth {
-        width: 5%;
-        height: 8%;
+        width: 10%;
+        height: 15%;
         top: 90%;
     }
 
@@ -554,15 +554,15 @@
     }
 
     .techStack > p.third {
-        width: 5%;
-        height: 20%;
+        width: 10%;
+        height: 30%;
         top: 70%;
         left: 85%;
     }
 
     .techStack > p.fourth {
-        width: 5%;
-        height: 20%;
+        width: 10%;
+        height: 30%;
         top: 90%;
         left: 87%;
         z-index: 11;
