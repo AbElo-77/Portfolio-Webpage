@@ -176,6 +176,10 @@
         border-radius: 0;
     }
 
+    .projectModal > div {
+        margin-left: 2rem;
+    }
+
     .projectModal > div > h1 {
         font-size: 2rem;
         padding: 0.3rem;
