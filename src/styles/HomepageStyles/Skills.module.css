@@ -601,3 +601,9 @@
     }
 
 }
+
+@media (max-width: 400px) {
+    .skillsContainer {
+        width: 75%;
+    }
+}
