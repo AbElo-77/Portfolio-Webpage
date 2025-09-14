@@ -57,7 +57,7 @@ export let skillsInformation = [
         'Frameworks': [ReactLogo, NodeLogo, NextLogo, ExpressLogo, VueLogo, AngularLogo],
         'Databases': [MongoDBLogo, PostgresLogo, MySQLLogo],
         'Tools': [GitLogo, DockerLogo, WebpackLogo, BabelLogo, JestLogo, ESLintLogo],
-        'Description': 'I have a diverse skill set in web development, including proficiency in various programming languages, frameworks, databases, and tools. I am always eager to learn new technologies and improve my skills.'
+        'Description': 'I have a diverse skill set in web development, including proficiency in various languages and frameworks. I am always eager to learn new technologies and improve my skills.'
     },
     {
         "id": 1,
