@@ -20,11 +20,11 @@ function Modal({ currentProject, dialogRef }: ModalProps) {
         <dialog
           className={styles.projectModal}
           ref={dialogRef}
-          onClick={handleBackgroundClick} // close when clicking outside
+          onClick={handleBackgroundClick} 
         >
           <div
             className={styles.modalContent}
-            onClick={(e) => e.stopPropagation()} // prevent closing when clicking inside
+            onClick={(e) => e.stopPropagation()} 
           >
             <img
               src={currentProject["BackgroundImage"]}

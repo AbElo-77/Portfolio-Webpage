@@ -229,7 +229,8 @@ html {
 
 @media (max-width: 480px) {
     .headerImage {
-        padding-top: 20vh;
+        padding-top: 10vh;
+        height: 80vh;
     }
     .headerImage > div > h1 {
         display: none;

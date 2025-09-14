@@ -177,6 +177,11 @@
         border-radius: 0;
     }
 
+    .projectModal > div {
+        width: 100%; 
+        height: 100%;
+    }
+
     .modalImage {
         min-height: 60%;
     }
@@ -187,13 +192,13 @@
     }
 
     .projectWriteUp {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
         padding: 0.3rem 0.3rem 0.3rem 0.3rem;
     }
 
 
     .techStackFooter {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
         padding: 0.2rem 0rem 0.2rem 0.3rem;
     }
 
