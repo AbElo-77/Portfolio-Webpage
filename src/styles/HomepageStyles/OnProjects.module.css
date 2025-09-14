@@ -11,6 +11,7 @@
     flex-direction: row;
     align-items: center;
     width: 80%;
+    overflow-x: hidden;
 }
 
 .headingSection > div {
@@ -231,7 +232,7 @@
         align-items: center;
         justify-content: center;
         padding: 0.5rem;
-    };
+    }
 
     .headingSection > div:nth-child(2) {
         display: none;

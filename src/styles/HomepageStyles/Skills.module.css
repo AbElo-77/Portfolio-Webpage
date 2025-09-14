@@ -503,7 +503,7 @@
     }
 
     .skillsContainer {
-        width: 80%;
+        width: 85%;
         min-height: 600px;
         padding: 1rem;
     }
@@ -601,10 +601,4 @@
         min-width: 100px;
     }
 
-}
-
-@media (max-width: 400px) {
-    .skillsContainer {
-        width: 75%;
-    }
 }
