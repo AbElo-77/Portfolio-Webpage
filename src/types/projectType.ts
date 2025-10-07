@@ -12,4 +12,5 @@ export type Project = {
     "WriteUp": string
     "GitHub Docs": string
     "Keywords": string[]
+    "Markdown"?: string
 }

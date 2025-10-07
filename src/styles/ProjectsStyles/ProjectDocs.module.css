@@ -70,6 +70,17 @@
     font-size: 1.25rem;
 }
 
+.markdownContainer {
+        width: 90%;
+    display: flex; 
+    justify-content: center;
+    color: rgb(71, 114, 255); 
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.75rem;
+    gap: 2rem;
+    z-index: 2;
+}
+
 @media (max-width: 768px) {
 
     .projectPage > nav {
@@ -86,6 +97,10 @@
         align-items: center;
         font-size: 0.9rem;
         gap: 1.5rem;
+    }
+
+    .markdownContainer {
+        font-size: 1rem;
     }
 }
 
@@ -109,5 +124,9 @@
         align-items: center;
         font-size: 0.75rem;
         gap: 0.5rem;
+    }
+
+    .markdownContainer {
+        font-size: 0.75rem;
     }
 }
