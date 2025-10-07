@@ -16,7 +16,7 @@ export let projects: Project[] = [
         "Complete": true,
         "Major": false,
         "Type": "Web",
-        "GitHub Docs": "",
+        "GitHub Docs": "https://github.com/AbElo-77/Portfolio-Webpage.git",
         "Keywords": [
             "portfolio", "web development", "frontend", "React", "TypeScript", "JavaScript", 
             "HTML5", "CSS3", "responsive design", "UI/UX", "dynamic projects gallery", 
@@ -41,7 +41,7 @@ export let projects: Project[] = [
         "Complete": false,
         "Major": false, 
         "Type": "ML",
-        "GitHub Docs": "",
+        "GitHub Docs": "https://github.com/AbElo-77/Python-Chess?tab=readme-ov-file",
         "Keywords": [
             "Python", "SQL", "machine learning", "AI", "Flask", "REST API", "Pandas", 
             "SciPy", "async programming", "AsynchIO", "requests library", "data pipelines", 
@@ -65,7 +65,7 @@ export let projects: Project[] = [
         "Complete": false,
         "Major": false,
         "Type": "Backend",
-        "GitHub Docs": "",
+        "GitHub Docs": "https://github.com/AbElo-77/Stock-Analyst-Jr.git",
         "Keywords": [
             "Java", "Spring Boot", "backend", "REST API", "Maven", "SQL", "PostgreSQL", 
             "database design", "data pipelines", "data modeling", "data science", 
@@ -89,7 +89,7 @@ export let projects: Project[] = [
         "Complete": false,
         "Major": true,
         "Type": "ML",
-        "GitHub Docs": "",
+        "GitHub Docs": "https://github.com/AbElo-77/Molecular-Modeler.git",
         "Keywords": [
             "Python", "C++", "PyQt5", "Qt Designer", "scientific computing", 
             "molecular modeling", "3D visualization", "GUI development", "OpenGL", 
@@ -115,7 +115,7 @@ export let projects: Project[] = [
         "Complete": false,
         "Major": true,
         "Type": "Backend",
-        "GitHub Docs": "",
+        "GitHub Docs": "https://github.com/AbElo-77/Compiler-in-C.git",
         "Keywords": [
             "C programming", "Lex", "Yacc", "compiler design", "parsing", 
             "lexical analysis", "syntax analysis", "code generation", "GCC", 

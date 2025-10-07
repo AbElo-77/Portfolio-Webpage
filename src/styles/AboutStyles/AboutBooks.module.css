@@ -64,7 +64,7 @@
     padding: 5px; 
     background-color: rgb(71, 71, 71); 
     border-radius: 5px;
-    max-width: 40%;
+    max-width: 50%;
 }
 
 .bookDisplay > div > h1 {
@@ -80,7 +80,7 @@
 }
 
 .bookDetails > a {
-    width: 5%;
+    width: clamp(50px, 20px + 0.03vw, 80px);
 }
 
 .bookDetails > span {
